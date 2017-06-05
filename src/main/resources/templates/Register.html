@@ -1,0 +1,48 @@
+
+<div class="desk-front sign-flow clearfix sign-flow-simple">
+    <div class="view view-signin" data-za-module="SignInForm" style="display: block;">
+        <form action="/register-student" id="regloginform" method="post">
+            <input type="hidden" name="_xsrf" value="21aa1c8d254df2899b23ab9afbd62a53">
+            <div class="group-inputs">
+                <div class="email input-wrapper">
+                    <input type="text" name="id" aria-label="学号" placeholder="学号" required="">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="classNumber" aria-label="班号" placeholder="班号" required="">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" name="score" aria-label="分数" placeholder="分数" required="">
+                </div>
+            </div>
+            <input type="hidden" name="next" value="$!{next}"/>
+            <div class="button-wrapper command clearfix">
+               <input type="submit" value="注册学生"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<div class="desk-front sign-flow clearfix sign-flow-simple">
+    <div class="view view-signin" data-za-module="SignInForm" style="display: block;">
+        <form action="/register-class" id="regloginform1" method="post">
+            <input type="hidden" name="_xsrf" value="21aa1c8d254df2899b23ab9afbd62a53">
+            <div class="group-inputs">
+
+                <div class="input-wrapper">
+                    <input type="text" name="classNumber" aria-label="班号" placeholder="班号" required="">
+                </div>
+
+                <div class="email input-wrapper">
+                    <input type="text" name="teacher" aria-label="教师" placeholder="教师" required="">
+                </div>
+
+            </div>
+            <input type="hidden" name="next" value="$!{next}"/>
+            <div class="button-wrapper command clearfix">
+                <input type="submit" value="注册班级信息"/>
+            </div>
+        </form>
+    </div>
+</div>
